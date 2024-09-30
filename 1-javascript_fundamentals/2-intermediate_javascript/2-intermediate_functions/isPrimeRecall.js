@@ -4,6 +4,8 @@ prime. Otherwise, false. A number is prime if it is only divisible
 by 1 and itself.
 */
 
+// Number -> Boolean
+// return true if the given number is prime
 const isPrime = function (number) {
 	if (number < 2) {
 		return false;
