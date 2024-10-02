@@ -9,6 +9,9 @@ Define this function using function expression syntax.
 HINT: you can use Array's slice() method to create a copy of an array
 */
 
+// (array X) Number -> (array X)
+// given an array of elements and a number n,
+// move the last n elements to the front of the array
 const rotateRight = function (array, num) {
 	const front = array.slice(array.length - num);
 	const back = array.slice(0, array.length - num);
