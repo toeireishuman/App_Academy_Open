@@ -28,19 +28,44 @@ console.log(repeatingTranslate("her family flew to France"));   // "herer family
 
 */
 
-let repeatingTranslate = function(sentence) {
-    // Your code here
+let repeatingTranslate = function (sentence) {
+	return sentence.split(" ").map(translateWord).join(" ");
 };
 
+const lastVowelIndex = function (word) {
+	const vowels = "aeiouAEIOU";
+	let index = -1;
 
-let translateWord = function(word) {
-    // Your code here
+	for (let i = word.length; i > 0 - 1; i--) {
+		const char = word[i];
+
+		if (vowels.includes(char)) {
+			index = i;
+			i = -1;
+		}
+	}
+
+	return index;
+};
+
+let translateWord = function (word) {
+	const vowels = "aeiouAEIOU";
+	const lastChar = word[word.length - 1];
+	if (word.length < 3) {
+		return word;
+	} else if (vowels.includes(lastChar)) {
+		return word + word;
+	} else {
+		const after = word.substring(lastVowelIndex(word) + 1);
+
+		return word + after;
+	}
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
-    module.exports = repeatingTranslate;
+	module.exports = repeatingTranslate;
 } catch (e) {
-    module.exports = null;
-}
+	module.exports = null;
+}
