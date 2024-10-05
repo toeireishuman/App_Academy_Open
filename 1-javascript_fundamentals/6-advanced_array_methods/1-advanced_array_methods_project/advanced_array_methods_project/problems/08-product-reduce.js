@@ -15,14 +15,14 @@ console.log(productWithReduce([4, 3])); // 12
 
 */
 
-let productWithReduce = function(nums) {
-    // Your code here
-}
+let productWithReduce = function (nums) {
+	return nums.reduce((accum, number) => accum * number, 1);
+};
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
-  module.exports = productWithReduce;
+	module.exports = productWithReduce;
 } catch (e) {
-  module.exports = null;
-}
+	module.exports = null;
+}
