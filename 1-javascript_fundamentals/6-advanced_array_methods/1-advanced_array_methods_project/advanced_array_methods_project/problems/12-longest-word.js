@@ -16,16 +16,26 @@ console.log(longestWord('')); // ''
 
 */
 
-let longestWord = function(sentence) {
-    // Your code here
-};
+let longestWord = function (sentence) {
+	const countCharacters = function (word) {
+		let numCharacters = 0;
 
-// Your code here
+		word.split("").forEach(char => numCharacters++);
+
+		return numCharacters;
+	};
+
+	const words = sentence.split(" ");
+
+	return words.reduce(function (accum, word) {
+		return countCharacters(accum) >= countCharacters(word) ? accum : word;
+	}, "");
+};
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
-    module.exports = longestWord;
+	module.exports = longestWord;
 } catch (e) {
-    module.exports = null;
-}
+	module.exports = null;
+}
