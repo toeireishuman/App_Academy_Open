@@ -22,7 +22,11 @@ Start Date: September 4, 2024
 
 <ol>
     <li>Advanced Array Methods</li>
-    <li>Objects</li>
+    <li>
+        <a href="https://github.com/toeireishuman/aA-objects" target="_blank">
+            Objects
+        </a>
+    </li>
     <li>Callback</li>
     <li>Scope and Closures</li>
     <li>Recursion</li>
