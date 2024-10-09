@@ -20,14 +20,11 @@ Start Date: September 4, 2024
 
 ## Projects
 
+-   Advanced Array Methods
+-   [Objects](https://github.com/toeireishuman/aA-objects)
+-   [Callbacks](https://github.com/toeireishuman/aA-callbacks)
+
 <ol>
-    <li>Advanced Array Methods</li>
-    <li>
-        <a href="https://github.com/toeireishuman/aA-objects" target="_blank">
-            Objects
-        </a>
-    </li>
-    <li>Callback</li>
     <li>Scope and Closures</li>
     <li>Recursion</li>
     <li>Timeout</li>
